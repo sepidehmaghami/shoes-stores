@@ -17,7 +17,7 @@ function App() {
 
 
   {!authContext.isAuth ? ( 
-    <Route path='/' element={<Login/>}/>
+    <Route path="/" element={<Login/>}/>
   ):( 
     <Route path="/" element={<Navigate replace to="/home"/>}/>
   )}

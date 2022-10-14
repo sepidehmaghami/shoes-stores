@@ -28,7 +28,7 @@ function Login() {
                 })
         })
         // setUser(loadedProducts)
-        if(user.username === username && user.password === password){
+        if(user.username == username && user.password == password){
             authContext.login()
         }
       }
