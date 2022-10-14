@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-### `npx create-react-app shoes-store`
+### `npx create-react-app shoes-stores`
 
 
 ## Available Scripts

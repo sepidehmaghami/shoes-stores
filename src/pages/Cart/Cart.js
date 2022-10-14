@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import './Cart.css'
-import { Space, Table } from 'antd';
+import { Space } from 'antd';
 import { Col, Row , Image } from 'antd';
 import imageCart from '../../Image/Cart.png'
 import { HomeOutlined , ShoppingOutlined , LogoutOutlined} from '@ant-design/icons';
@@ -80,7 +80,7 @@ function Cart(props) {
         <Col span={8} offset={8}>
             <ul className='cart-list'>
             <li>
-                        <Link to="/" onClick={toggleAuth}>
+                        <Link to="/shoes-stores" onClick={toggleAuth}>
                             <LogoutOutlined />
                         </Link>
                     </li>

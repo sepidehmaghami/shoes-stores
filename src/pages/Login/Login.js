@@ -6,7 +6,6 @@ import { AuthContext } from '../../context/auth-context'
 function Login() {
     const authContext = useContext(AuthContext)
     const [user,setUser]=useState([]);
-    const loadedProducts =[]
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState(0)
 
@@ -29,11 +28,7 @@ function Login() {
                 })
         })
         // setUser(loadedProducts)
-        console.log(user.password)
-        console.log(user.username)
-        console.log(username)
-        console.log(password)
-        if(user.username == username && user.password == password){
+        if(user.username === username && user.password === password){
             authContext.login()
         }
       }

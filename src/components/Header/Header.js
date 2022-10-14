@@ -19,7 +19,7 @@ const toggleAuth=()=>{
                 
                 <ul className='header-list'>
                     <li>
-                        <Link to="/" onClick={toggleAuth}>
+                        <Link to="/shoes-stores" onClick={toggleAuth}>
                             <LogoutOutlined />
                         </Link>
                     </li>

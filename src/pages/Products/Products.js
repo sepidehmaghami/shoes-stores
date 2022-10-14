@@ -1,8 +1,8 @@
-import React ,{useState , useEffect , useRef} from 'react'
+import React ,{useState , useEffect} from 'react'
 import "./Products.css"
 import Header from '../../components/Header/Header'
 import Search from '../../components/Search/Search'
-import { Space, Table } from 'antd';
+import { Space } from 'antd';
 function Products() {
   const [products,setProducts] = useState([]);
   const [newProducts,setNewProducts] = useState([]);
