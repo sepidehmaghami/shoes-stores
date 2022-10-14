@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React,{useContext} from "react";
+import Login from "./pages/Login/Login";
+import Products from "./pages/Products/Products";
+import Cart from "./pages/Cart/Cart";
+import {AuthContext} from './context/auth-context'
+import {Route ,Routes,Navigate } from 'react-router-dom'
 function App() {
+  const authContext = useContext(AuthContext)
+//   let content =  <Login/>
+//   if(authContext.isAuth){
+//     content = <Products/>
+// }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+<Routes>
+
+
+  {!authContext.isAuth ? ( 
+    <Route path='/' element={<Login/>}/>
+  ):( 
+    <Route path="/" element={<Navigate replace to="/home"/>}/>
+  )}
+  <Route path="/home" element={<Products/>}/>
+  <Route path="/cart" element={<Cart/>}/>
+</Routes>
+      {/* {content} */}
     </div>
   );
 }

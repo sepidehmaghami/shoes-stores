@@ -1,0 +1,58 @@
+header{
+    margin-bottom: -175px !important;
+}
+
+.ant-layout-header{
+    padding: 0px !important;
+}
+
+.ant-image{
+    width: 100% !important;
+    min-height: 300px !important;
+}
+
+.title{
+    position: absolute;
+    color: #ffffff !important;
+    top: 3%;
+    margin-left: 40px;
+    font-family: cursive;
+}
+
+.header-list{
+    display: flex;
+    position: absolute;
+    top: 3.5%;
+    right: 40px;
+    font-size: 25px;
+}
+.header-list > li{
+    margin : 0px 25px;
+    list-style : none;
+    color: #fff !important;
+}
+.header-list > li > a{
+    color: #fff !important;
+}
+
+@media screen and (max-width:610px) {
+    .title{
+        font-size: 20px !important;
+    }
+    .header-list{
+        font-size: 20px;
+    }
+    .header-list > li{
+        margin : 0px 15px;
+    }
+}
+
+@media screen and (max-width:944px) {
+    .ant-image{
+        width: 120% !important;
+    }
+    .header-image{
+        width:192% !important;
+    }
+    
+}

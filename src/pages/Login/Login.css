@@ -1,0 +1,25 @@
+h2{
+    color:#EA8685 !important;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+.ant-form-item-control-input{
+    margin-top: 1rem ;
+}
+
+.btn-login{
+    background-color: #009432 !important;
+    color:#4ffe8f !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 0rem 2rem !important;
+    font-size: 17px !important;
+    margin-top: 2rem !important;
+}
+
+
+.ant-input-password,.ant-input{
+    border-radius: 10px !important;
+}
