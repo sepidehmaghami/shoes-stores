@@ -17,9 +17,9 @@ function App() {
 
 
   {!authContext.isAuth ? ( 
-    <Route path='/shoes-stores' element={<Login/>}/>
+    <Route path='//https://sepidehmaghami.github.io/shoes-stores' element={<Login/>}/>
   ):( 
-    <Route path="/shoes-stores" element={<Navigate replace to="/home"/>}/>
+    <Route path="//https://sepidehmaghami.github.io/shoes-stores" element={<Navigate replace to="/home"/>}/>
   )}
   <Route path="/home" element={<Products/>}/>
   <Route path="/cart" element={<Cart/>}/>
