@@ -45,14 +45,16 @@ useEffect(()=>{
     body:JSON.stringify(totalPrice), 
     headers: { 'Content-Type': 'application/json' },
   })  
+},[totalPrice])
 
+  useEffect(()=>{
     // Update the new product in the database
   fetch('https://shoes-store-79369-default-rtdb.firebaseio.com/buy/product.json',{
     method: 'POST',
     body:JSON.stringify(newProducts), 
     headers: { 'Content-Type': 'application/json' },
   })  
-},[totalPrice])
+},[newProducts])
 
 const addProducts = (id) => {
   //Reading price and updating total price

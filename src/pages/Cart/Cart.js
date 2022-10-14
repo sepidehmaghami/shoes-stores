@@ -31,7 +31,7 @@ function Cart(props) {
         }
         setBasket(loadedBasket)
       })
-    },[totalPrice])
+    },[loadedBasket])
 
       useEffect(()=>{
       fetch("https://shoes-store-79369-default-rtdb.firebaseio.com/buy/totalPrice.json")
