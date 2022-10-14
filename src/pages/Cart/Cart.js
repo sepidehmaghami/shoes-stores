@@ -80,7 +80,7 @@ function Cart(props) {
         <Col span={8} offset={8}>
             <ul className='cart-list'>
             <li>
-                        <Link to="https://sepidehmaghami.github.io/shoes-stores" onClick={toggleAuth}>
+                        <Link to="/" onClick={toggleAuth}>
                             <LogoutOutlined />
                         </Link>
                     </li>
